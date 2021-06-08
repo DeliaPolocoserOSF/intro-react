@@ -48,6 +48,7 @@ class App extends React.Component {
           <div className="Box-header">
           </div>
         </div>
+        <h3 className="Box-title d-flex flex-justify-center">GradeBook</h3>
         <nav className="UnderlineNav d-flex flex-justify-center">
           <div className="UnderlineNav-body pt-6">
             <button
