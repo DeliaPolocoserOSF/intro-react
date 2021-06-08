@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "./Table";
+
 /*Add import statement here*/
 
 class App extends React.Component {
@@ -48,7 +49,8 @@ class App extends React.Component {
   render() {
     let tabChoice = <div />;
 
-    if (this.state.buttonClicked === "assignments") {
+    /*Uncomment below to render assignments*/
+    /*if (this.state.buttonClicked === "assignments") {
       tabChoice = (
         <List
           placeholder="Add Assignment..."
@@ -57,23 +59,23 @@ class App extends React.Component {
           title="Assignments"
         />
       );
-    }
+    }*/
 
     /* Change below to render students*/
 
-    if (this.state.buttonClicked === "students") {
+    /*if (this.state.buttonClicked === "students") {
       tabChoice = (
         <List
-          placeholder="Add Assignment..."
+          placeholder="Add Assignment..." 
           currList={this.state.assignments}
           addFunction={this.addAssignment}
           title="Student Roster"
         />
       );
-    }
+    }*/
 
     /* Uncomment lines below to render grades*/
-    if (this.state.buttonClicked === "grades") {
+    /*if (this.state.buttonClicked === "grades") {
       tabChoice = (
         <Table
           tableNames={this.state.assignments}
@@ -82,7 +84,7 @@ class App extends React.Component {
           data={this.state.grades}
         />
       );
-    }
+    }*/
 
     return (
       <div>
